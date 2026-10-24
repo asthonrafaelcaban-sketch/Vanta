@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21
+          java-version: 25
       - run: |
           unzip -q vanta-template-1.21.11.zip -d proj
           cd "$(dirname "$(find proj -name gradlew | head -1)")"
