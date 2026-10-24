@@ -10,7 +10,7 @@ jobs:
           distribution: temurin
           java-version: 21
       - run: |
-          unzip project.zip -d proj
+          unzip -q vanta-template-1.21.11.zip -d proj
           cd "$(dirname "$(find proj -name gradlew | head -1)")"
           chmod +x gradlew
           ./gradlew build
